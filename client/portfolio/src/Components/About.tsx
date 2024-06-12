@@ -13,20 +13,20 @@ const About: React.FC = () => {
   const [showCursor, setShowCursor] = useState<boolean>(true);
 
   const sentences = [
-    " am a passionate software developer, skilled in full-stack and machine learning solutions",
-    " specialize in crafting seamless user experiences and elegant UI/UX designs with a deep love for technology, ",
-    " excel at both whether it's developing robust back-end systems or designing intuitive front-end interfaces",
-    " thrive on turning ideas into impactful digital products",
-    " craft digital solutions with code mastery and creativity",
-    " build seamless experiences with front-end expertise",
-    " architect robust systems for optimal performance and scalability",
-    " design intuitive interfaces for user delight and engagement",
-    " implement innovative features with cutting-edge technology",
-    " optimize workflows for efficiency and productivity gains",
-    " solve complex problems with analytical thinking and problem-solving skills",
-    " collaborate across teams to deliver impactful projects on time",
-    " continuously learn to stay ahead in a fast-paced tech landscape",
-    " am passionate about building the future of digital experiences"
+    " am a software developer",
+    " specialize in crafting seamless user experiences and elegant UI/UX designs ",
+    " can develop robust back-end systems and design intuitive UIs ",
+    " thrive on turning ideas into impactful digital products ",
+    " craft digital solutions with code mastery and creativity ",
+    " build seamless experiences with front-end expertise ",
+    " architect robust systems for optimal performance and scalability ",
+    " design intuitive interfaces for user delight and engagement ",
+    " implement innovative features with cutting-edge technology ",
+    " optimize workflows for efficiency and productivity gains ",
+    " solve complex problems with analytical thinking and problem-solving skills ",
+    " collaborate across teams to deliver impactful projects on time ",
+    " continuously learn to stay ahead in a fast-paced tech landscape ",
+    " am passionate about building the future of digital experiences "
   ];
 
   useEffect(() => {
