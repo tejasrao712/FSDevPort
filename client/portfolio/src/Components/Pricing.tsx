@@ -11,23 +11,33 @@ const Pricing: React.FC = () => {
               <tr>
                 <th className="px-4 py-2">Service</th>
                 <th className="px-4 py-2">Price</th>
+                <th className="px-4 py-2">Price</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td className="border px-4 py-2">Static Page</td>
+                <td className="border px-4 py-2">Static Page</td>
                 <td className="border px-4 py-2">$50/hr</td>
               </tr>
               <tr>
                 <td className="border px-4 py-2">Dynamic Page</td>
+                <td className="border px-4 py-2">Static Page</td>
                 <td className="border px-4 py-2">$70/hr</td>
               </tr>
               <tr>
                 <td className="border px-4 py-2">Hosting (Annual)</td>
+                <td className="border px-4 py-2">Static Page</td>
                 <td className="border px-4 py-2">$100/year</td>
               </tr>
               <tr>
                 <td className="border px-4 py-2 font-bold">Average Overall Price</td>
+                <td className="border px-4 py-2">Static Page</td>
+                <td className="border px-4 py-2 font-bold">$500</td>
+              </tr>
+              <tr>
+                <td className="border px-4 py-2 font-bold">Average Overall Price</td>
+                <td className="border px-4 py-2">Static Page</td>
                 <td className="border px-4 py-2 font-bold">$500</td>
               </tr>
             </tbody>
