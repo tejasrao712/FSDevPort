@@ -197,11 +197,6 @@
 import React, { useState, useEffect } from 'react';
 import backgroundImage from '../media/jpg/AboutBG.jpg';
 
-interface SectionProps {
-  title: string;
-  children: React.ReactNode;
-}
-
 const SubSection: React.FC<{
   title: string;
   duration: string;
