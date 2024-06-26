@@ -1,6 +1,5 @@
 import React from 'react';
 import About from './About';
-import Contact from './Contact';
 import Projects from './Projects';
 import Pricing from './Pricing';
 import Navbar from './NavBar';

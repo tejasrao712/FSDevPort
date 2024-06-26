@@ -202,13 +202,6 @@ interface SectionProps {
   children: React.ReactNode;
 }
 
-const Section: React.FC<SectionProps> = ({ title, children }) => (
-  <div className="mb-12">
-    <h2 className="text-3xl font-semibold mb-8">{title}</h2>
-    {children}
-  </div>
-);
-
 const SubSection: React.FC<{
   title: string;
   duration: string;

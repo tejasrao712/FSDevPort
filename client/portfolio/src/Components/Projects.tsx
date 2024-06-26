@@ -1,4 +1,3 @@
-import { url } from 'inspector';
 import React from 'react';
 import DiscordClone from '../media/jpg/Discord-Clone.png'
 import TaskMaster from '../media/jpg/TaskMaster2.png'

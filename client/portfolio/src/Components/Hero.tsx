@@ -6,9 +6,6 @@ const Hero: React.FC = () => {
     "I specialize in developing innovative and efficient software solutions for a variety of needs.",
     "I can develop robust back-end systems and design intuitive UIs ",
     "I thrive on turning ideas into impactful digital products ",
-    //     " craft digital solutions with code mastery and creativity ",
-    //     " build seamless experiences with front-end expertise ",
-    //     " architect robust systems for optimal performance and scalability ",
     "I design intuitive interfaces for user delight and engagement ",
     //     " implement innovative features with cutting-edge technology ",
     //     " optimize workflows for efficiency and productivity gains ",
@@ -20,14 +17,6 @@ const Hero: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [fade, setFade] = useState(true);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      nextStatement();
-    }, 2000); // Change statement every 2 seconds
-
-    return () => clearInterval(interval);
-  }, []);
-
   const nextStatement = () => {
     setFade(false);
     setTimeout(() => {
@@ -35,6 +24,16 @@ const Hero: React.FC = () => {
       setFade(true);
     }, 100);
   };
+  
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextStatement();
+    }, 2000); // Change statement every 2 seconds
+
+    return () => clearInterval(interval);
+  }, [nextStatement]);
+
+
 
   // const prevStatement = () => {
   //   setFade(false);

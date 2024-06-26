@@ -5,16 +5,7 @@ const Footer: React.FC = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [fade, setFade] = useState(false);
-
-  useEffect(() => {
-
-    const interval = setInterval(() => {
-      nextStatement();
-    }, 2000);
-
-    return () => clearInterval(interval);
-  }, []);
-
+  
   const nextStatement = () => {
     setFade(false);
     setTimeout(() => {
@@ -22,6 +13,16 @@ const Footer: React.FC = () => {
       setFade(true);
     }, 100);
   }
+  useEffect(() => {
+
+    const interval = setInterval(() => {
+      nextStatement();
+    }, 2000);
+
+    return () => clearInterval(interval);
+  },[nextStatement]);
+
+
 
   const Designations = [
     "Bachelor of Engineering",

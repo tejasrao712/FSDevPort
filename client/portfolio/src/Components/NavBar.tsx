@@ -21,7 +21,7 @@ const Navbar: React.FC = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [lastScrollY]);
+  }, [lastScrollY,handleScroll]);
 
   return (
     <nav className={`bg-gray-900 sticky z-20 mx-auto top-0 transition-transform duration-300 shadow-lg ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
