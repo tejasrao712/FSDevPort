@@ -9,13 +9,13 @@ import Hero from './Hero';
 
 const Home: React.FC = () => {
   return (
-    <div id='home' className='bg-gray-900'>
+    <div className='bg-gray-900'>
       <Navbar />
       <Hero />
       <About />
       <Projects />
       <Pricing />
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </div>
   );
