@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import TejasRao from '../media/png/TejasRao7.png';
 
 const Hero: React.FC = () => {
@@ -17,14 +17,14 @@ const Hero: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [fade, setFade] = useState(true);
 
-  const nextStatement = () => {
+  const nextStatement = useCallback(() => {
     setFade(false);
     setTimeout(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % subHeroStatements.length);
       setFade(true);
     }, 100);
-  };
-  
+  },[subHeroStatements.length]);
+
   useEffect(() => {
     const interval = setInterval(() => {
       nextStatement();

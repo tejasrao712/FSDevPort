@@ -7,12 +7,13 @@ const Navbar: React.FC = () => {
 
   const handleScroll = () => {
     if (typeof window !== 'undefined') {
+      const currentScrollY = window.scrollY;
       if (window.scrollY > lastScrollY) {
         setVisible(false);
       } else {
         setVisible(true);
       }
-      setScrollY(window.scrollY);
+      setScrollY(currentScrollY);
     }
   };
 
