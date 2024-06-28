@@ -2,11 +2,11 @@
 
 // const Pricing: React.FC = () => {
 //   return (
-//     <section id="pricing" className="py-20 bg-gray-900 text-white">
+//     <section id="pricing" className="py-20 bg-zinc-900 text-white">
 //       <div className="container mx-auto text-center">
 //         <h2 className="text-4xl font-bold mb-8">Pricing</h2>
 //         <div className="overflow-x-auto">
-//           <table className="table-auto w-full max-w-4xl mx-auto bg-gray-800 rounded-lg shadow-lg">
+//           <table className="table-auto w-full max-w-4xl mx-auto bg-zinc-800 rounded-lg shadow-lg">
 //             <thead>
 //               <tr>
 //                 <th className="px-4 py-2">Service</th>
@@ -53,23 +53,23 @@ import React from 'react';
 
 const Pricing: React.FC = () => {
   return (
-    <section id="pricing" className="py-20 bg-gray-900 text-white">
+    <section id="pricing" className="py-20 bg-zinc-950 text-white">
       <div className="container mx-auto text-center">
         <h2 className="text-4xl font-bold mb-8">PLANS AND PRICING</h2>
         <div className="overflow-x-auto">
-          <table className="table-auto w-full max-w-4xl mx-auto bg-gray-800 rounded-lg shadow-lg">
+          <table className="table-auto w-full max-w-4xl bg-zinc-800 rounded-lg shadow-lg mx-auto">
             <thead>
               <tr>
                 <th className="px-4 py-2">Package</th>
-                <th className="px-4 py-2">Price (USD)</th>
+                <th className="px-4 py-2">Price (USD/INR)</th>
                 <th className="px-4 py-2">Duration (Weeks)</th>
                 <th className="px-4 py-2">Details</th>
               </tr>
             </thead>
             <tbody>
-              <tr className="bg-gray-700">
+              <tr className="bg-zinc-700">
                 <td className="border px-4 py-2">Basic</td>
-                <td className="border px-4 py-2">$18</td>
+                <td className="border px-4 py-2">$18/ &#8377;1500</td>
                 <td className="border px-4 py-2">4 Weeks</td>
                 <td className="border px-4 py-2">
                   Responsive one-page website including slider, contact form, social links, Google Maps, blog.
@@ -77,15 +77,15 @@ const Pricing: React.FC = () => {
               </tr>
               <tr>
                 <td className="border px-4 py-2">Standard</td>
-                <td className="border px-4 py-2">$125</td>
+                <td className="border px-4 py-2">$125/ &#8377;10000</td>
                 <td className="border px-4 py-2">6 Weeks</td>
                 <td className="border px-4 py-2">
                   7 Page Fully Responsive website + Fast Plugins + Support + Payment gateway + Color branding
                 </td>
               </tr>
-              <tr className="bg-gray-700">
+              <tr className="bg-zinc-700">
                 <td className="border px-4 py-2">Premium</td>
-                <td className="border px-4 py-2">$245</td>
+                <td className="border px-4 py-2">$245/ &#8377;18000</td>
                 <td className="border px-4 py-2">8 Weeks</td>
                 <td className="border px-4 py-2">
                   12 pages E-commerce functionality + Product and content upload + Speed, Security, and SEO Optimization
@@ -93,7 +93,7 @@ const Pricing: React.FC = () => {
               </tr>
               <tr>
                 <td className="border px-4 py-2">Enterprise</td>
-                <td className="border px-4 py-2">$500</td>
+                <td className="border px-4 py-2">$500/ &#8377;40000/</td>
                 <td className="border px-4 py-2">10 Weeks</td>
                 <td className="border px-4 py-2">
                   Customized solution with advanced features, scalable infrastructure, dedicated support, and maintenance.

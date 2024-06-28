@@ -19,7 +19,7 @@
 //   return (
 //     <section id='contact' className="bg-white min-h-screen p-8">
 //       <div className="container mx-auto">
-//         <h2 className="text-5xl font-bold text-gray-800">Contact</h2>
+//         <h2 className="text-5xl font-bold text-zinc-800">Contact</h2>
 //         <form onSubmit={sendMessage}>
 //           <label>
 //             Name
@@ -66,7 +66,7 @@ import React from 'react';
 
 const Contact: React.FC = () => {
   return (
-    <section id="contact" className="py-20 bg-gray-900 text-white rounded-3xl">
+    <section id="contact" className="py-20 bg-zinc-900 text-white rounded-3xl">
       <div className="container p-8 mx-auto text-center">
         <h2 className="text-4xl font-bold mb-8">CONTACT</h2>
         <form className="max-w-lg mx-auto">

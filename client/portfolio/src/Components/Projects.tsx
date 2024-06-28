@@ -54,17 +54,17 @@ const Projects: React.FC = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-gray-800 text-white">
+    <section id="projects" className="py-20 bg-zinc-800 px-8 text-black">
       <div className="container mx-auto">
-        <h2 className="text-4xl font-bold mb-8 text-center">PROJECTS</h2>
-        <div className="flex overflow-x-scroll space-x-4 p-4">
+        <h2 className="text-4xl font-bold mb-8 text-center text-white">PROJECTS</h2>
+        <div className="flex overflow-x-scroll scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200 space-x-4 p-4">
           {projectList.map((project, index) => (
             <div key={index} className="bg-gray-700 p-4 rounded-lg shadow-lg min-w-96"
                  style={{ backgroundImage: `url(${project.backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
               {/* <div className="h-16 rounded-md mb-4"></div> Placeholder for background image */}
               <div className="relative z-10">
                 <h3 className="text-2xl font-bold mb-2">
-                  <a href={project.link} className="text-white hover:underline">{project.title}</a>
+                  <a href={project.link} className="text-black hover:underline">{project.title}</a>
                 </h3>
                 <p className="text-lg mb-2">{project.description}</p>
                 <p className="text-sm mb-4">{project.technologies}</p>

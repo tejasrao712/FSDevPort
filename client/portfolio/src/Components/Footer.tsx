@@ -89,9 +89,9 @@ const Footer: React.FC = () => {
   }, [nextStatement]);
 
   return (
-    <footer className="bg-gray-800 text-white py-8">
-      <div className="container mx-auto flex justify-between">
-        <div>
+    <footer className="bg-zinc-800 text-white">
+      <div className="container flex justify-between">
+        <div className='p-8'>
           <h3 className="text-xl font-bold">Tejas S Rao</h3>
           <p className={`text-left transition-opacity duration-300 ${fade ? 'opacity-100' : 'opacity-0'}`}>
             {Designations[currentIndex]}
@@ -99,7 +99,7 @@ const Footer: React.FC = () => {
           <p>Email: tejasrao712@gmail.com</p>
           <p>Bengaluru, India</p>
         </div>
-        <div>
+        <div className='sm:left-0 mr-8 mt-8'>
           <Contact />
         </div>
       </div>
